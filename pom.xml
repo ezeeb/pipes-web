@@ -69,6 +69,33 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.ws4d.pipes.buildkit</groupId>
+				<artifactId>buildkit-maven-launcher</artifactId>
+				<version>1.0.0</version>
+		
+				<executions>
+					<execution>
+						<goals>
+							<goal>hotdeploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		
+			<plugin>
+				<groupId>org.ws4d.pipes.buildkit</groupId>
+				<artifactId>buildkit-maven-notification</artifactId>
+				<version>1.0.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>notify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
 				<version>2.6</version>
@@ -100,7 +127,7 @@
 		<dependency>
 			<groupId>org.ws4d.pipes</groupId>
 			<artifactId>pipes-core</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.12</version>
 			<type>bundle</type>
 			<scope>provided</scope>
 		</dependency>

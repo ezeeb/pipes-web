@@ -53,6 +53,8 @@ public class Get extends BaseModule {
 				getClient().executeMethod(method);
 				
 				setOutData(PORT_RESPONSE, method.getResponseBodyAsString());
+				setOutData(PORT_STATUSCODE, method.getStatusCode());
+				setOutData(PORT_STATUSLINE, method.getStatusLine());
 				
 			} catch (Exception e) {
 				getLogger().log(Level.SEVERE,
